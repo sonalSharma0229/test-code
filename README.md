@@ -3,13 +3,29 @@
 The purpose of this project is to supply a project to test your code-testing abilities. Included is a small webapp that pulls from an API, and displays results. There's also an e2e testbed ([Protractor](http://www.protractortest.org/)) as well as a unit test testbed ([Karma](https://karma-runner.github.io)). See below or `package.json` for details on running each.
 
 ## Tasks to Complete
-There are a handfull of test files (`*.spec.ts`) that are filled with either failing units (example `src/app/services/cocktail.service.spec.ts`) or prompts to add unit tests (example `src/app/pipes/truncate.pipe.spec.ts`). 
+Please make it as far as you can, and add additional test cases where you see fit to. 
 
-The tasks to complete are marked by both `// TODO:` markers as well as filled with a failing test (`expect(false).toBeTruthy();`). Please see and complete those. 
+> Note: If you are unfamiliar with TypeScript/JavaScript test writing, and feel more comfortable writing test suites in alternative tools and test runners, please feel free to implement using them and bundle that with appropriate instructions on how to run and/or a way for us to repeat the same process. 
 
-Additionally, there's an e2e spec file (`app.e2e-spec.ts`) that has empty test clauses for your attention.
+### QA Suite (documented)
+First up, let's build a QA suite for testing the functionality of this applications. There are a few user flows involved with finding drinks, please go through and document an appropriate QA process for each featureset:
+- Basic search
+- Randomized search
+- Viewing result(s)
+- Search + Filtering result(s)
 
-Please make it as far as you can, and add additional test cases where you see fit to.
+Be sure to include possible bugs, areas for improvement, considerations for different device types, etc in your suite. You can just check in related file(s) to a directory in the repo (`docs/` for example).
+
+### Unit Tests
+Additionally, there are a handfull of test files (`*.spec.ts`) that are filled with either failing units (example `src/app/services/cocktail.service.spec.ts`) or prompts to add unit tests (example `src/app/pipes/truncate.pipe.spec.ts`). 
+
+The tasks to complete are marked by both `// TODO:` markers as well as filled with a failing test (`expect(false).toBeTruthy();`). Please see and complete those if possible.
+
+### E2E / Integration Tests
+Lastly, there's an e2e spec file (`app.e2e-spec.ts`) that has empty test clauses for your attention. 
+
+
+---
 
 ## Delivery on Completion
 Please push your completed code repository to a remote repository (GitHub, Bitbucket) and provide us with the url and public access.
