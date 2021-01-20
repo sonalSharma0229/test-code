@@ -29,24 +29,8 @@ Lastly, there's an e2e spec file (`app.e2e-spec.ts`) that has empty test clauses
 ## Delivery on Completion
 Please push your completed code repository to a remote repository (GitHub, Bitbucket) and provide us with the url and public access.
 
-## Starting Coverage
 
-Coverage at last checkin:
-```
-Chrome 86.0.4240 (Mac OS X 10.13.6): Executed 59 of 59 (21 FAILED) (0.867 secs / 0.653 secs)
-TOTAL: 21 FAILED, 38 SUCCESS
-TOTAL: 21 FAILED, 38 SUCCESS
-TOTAL: 21 FAILED, 38 SUCCESS
-
-=============================== Coverage summary ===============================
-Statements   : 61.57% ( 165/268 )
-Branches     : 27.27% ( 12/44 )
-Functions    : 54.64% ( 53/97 )
-Lines        : 59.77% ( 153/256 )
-================================================================================
-```
-
-## Getting Started
+## Getting Project Started
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
@@ -88,3 +72,20 @@ Run `ng generate component component-name` to generate a new component. You can 
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Starting Coverage
+
+Coverage at last checkin:
+```
+Chrome 86.0.4240 (Mac OS X 10.13.6): Executed 59 of 59 (21 FAILED) (0.867 secs / 0.653 secs)
+TOTAL: 21 FAILED, 38 SUCCESS
+TOTAL: 21 FAILED, 38 SUCCESS
+TOTAL: 21 FAILED, 38 SUCCESS
+
+=============================== Coverage summary ===============================
+Statements   : 61.57% ( 165/268 )
+Branches     : 27.27% ( 12/44 )
+Functions    : 54.64% ( 53/97 )
+Lines        : 59.77% ( 153/256 )
+================================================================================
+```
