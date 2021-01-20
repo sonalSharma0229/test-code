@@ -7,7 +7,7 @@ Please make it as far as you can, and add additional test cases where you see fi
 
 > Note: If you are unfamiliar with TypeScript/JavaScript test writing, and feel more comfortable writing test suites in alternative tools and test runners, please feel free to implement using them and bundle that with appropriate instructions on how to run and/or a way for us to repeat the same process. 
 
-### QA Suite (documented)
+### QA Suite (documentation)
 First up, let's build a QA suite for testing the functionality of this applications. There are a few user flows involved with finding drinks, please go through and document an appropriate QA process for each featureset:
 - Basic search
 - Randomized search
@@ -23,7 +23,6 @@ The tasks to complete are marked by both `// TODO:` markers as well as filled wi
 
 ### E2E / Integration Tests
 Lastly, there's an e2e spec file (`app.e2e-spec.ts`) that has empty test clauses for your attention. 
-
 
 ---
 
