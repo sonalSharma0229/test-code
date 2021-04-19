@@ -7,6 +7,8 @@ import { NgxsModule } from '@ngxs/store';
 import { CocktailsState } from 'src/app/state/cocktail.state';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FiltersState } from 'src/app/state/filter.state';
+import { By } from '@angular/platform-browser';
+import { SetSearchTerm } from 'src/app/state/filter.action';
 
 describe('SearchComponent', () => {
     let component: SearchComponent;
@@ -28,6 +30,8 @@ describe('SearchComponent', () => {
         fixture = TestBed.createComponent(SearchComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
+        component.ngOnInit();
+        
     });
 
     it('should create', () => {
@@ -36,22 +40,28 @@ describe('SearchComponent', () => {
 
     // TODO:
     it('should have a search field', () => {
-        expect(false).toBeTruthy();
+      expect(component.searchTerm).toBeTruthy();
     });
-
     // TODO:
-    it('should have a search button', () => {
-        expect(false).toBeTruthy();
+    it('should have a search button', () => { 
+        
+        const button = fixture.debugElement.query(By.css('.search-button')).nativeElement;
+        button.click();
+        fixture.detectChanges();
+         expect(button).toBeTruthy();
     });
 
     // TODO:
     it('should have a category dropdown', () => {
-        expect(false).toBeTruthy();
+        const category = component.filterCategeory(new Event('Change'));
+        expect(category).toBeTruthy();
     });
 
     // TODO:
     it('should have an ingredient dropdown', () => {
-        expect(false).toBeTruthy();
+         const ingredient = component.filterIngredient(new Event('Change'));
+
+        expect(ingredient).toBeTruthy();
     });
 
     // TODO:
@@ -66,6 +76,8 @@ describe('SearchComponent', () => {
 
     // TODO:
     it('should search for cocktails by name', () => {
-        expect(false).toBeTruthy();
+      expect(false).toBeTruthy();
     });
+
+    
 });

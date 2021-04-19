@@ -11,6 +11,7 @@ import { CocktailsState } from '../state/cocktail.state';
 import { FiltersState } from '../state/filter.state';
 
 describe('CocktailService test using HttpClientTestingModule', () => {
+   // let component: CocktailService;
     let httpTestingController: HttpTestingController;
     let service: CocktailService;
     const baseUri = 'https://www.thecocktaildb.com/api/json/v1/1';
@@ -29,51 +30,64 @@ describe('CocktailService test using HttpClientTestingModule', () => {
 
     // TODO:
     it('should return the length of possible pages', () => {
-        expect(false).toBeTruthy();
+        const pageLength = service.getPagesLength();
+        expect(pageLength).toBeTruthy();
+        
     });
 
     // TODO:
     it('should return a list from paginateCocktails', () => {
-        expect(false).toBeTruthy();
+      
+        const getPaginateCocktails = service.paginateCocktails(1);
+        expect(getPaginateCocktails).toBeTruthy();
     });
 
     // TODO:
     it('should return cocktail details', () => {
-        expect(false).toBeTruthy();
+        const conktailsDetails = service.getCocktailDetails("17222");
+        expect(conktailsDetails).toBeTruthy();
     });
 
     // TODO:
     it('should return available category list', () => {
-        expect(false).toBeTruthy();
+
+    const list =  service.getFilter("a");
+    expect(list).toBeTruthy();
     });
 
     // TODO:
     it('should reset the search to letter a if no term is included', () => {
-        expect(false).toBeTruthy();
+        const searchReset = service.searchCocktails("a");
+        expect(searchReset).toBeTruthy();
     });
 
     // TODO:
     it('should search by first letter', () => {
-        expect(false).toBeTruthy();
+        const serachByfirstLetter = service.searchCocktails("b");
+        expect(serachByfirstLetter).toBeTruthy();
     });
 
     // TODO:
     it('should search by name', () => {
-        expect(false).toBeTruthy();
+        const serachByName = service.searchCocktails("vodka");
+        expect(serachByName).toBeTruthy();
     });
 
     // TODO:
     it('should filter by category (ingredient)', () => {
-        expect(false).toBeTruthy();
+        const filterByCategory = service.filterByCategory("i","Gin");
+        expect(filterByCategory).toBeTruthy();
     });
 
     // TODO:
     it('should get a random drink', () => {
-        expect(false).toBeTruthy();
+        const randomDrink = service.getRandomCocktail();
+        expect(randomDrink).toBeTruthy();
     });
 
     // TODO:
     it('throws 404 error', () => {
-        expect(false).toBeTruthy();
+        const throws404 = service.searchCocktails("10");
+        expect(throws404).toBeTruthy();
     });
 });

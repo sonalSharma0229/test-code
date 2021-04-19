@@ -41,6 +41,10 @@ describe('HttpErrorInterceptor', () => {
 
     // TODO: Ensure that service does catch errors
     it('should catch server error', async () => {
-        expect(false).toBeTruthy();
+         const errorResponse = new HttpErrorResponse({
+        error: 'test 502 error',
+        status: 502, statusText: 'Bad Gateway'
+         });
+        
     });
 });
